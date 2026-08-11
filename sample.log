@@ -1,0 +1,9 @@
+2026-06-20 09:14:22 INFO  Service started successfully
+2026-06-20 09:15:01 INFO  User login: admin
+2026-06-20 09:16:45 WARNING Disk space on /var is at 82%
+2026-06-20 09:18:12 ERROR  Database connection timeout after 30s
+2026-06-20 09:18:13 ERROR  Failed to process request ID 4471
+2026-06-20 09:20:33 INFO  Retry succeeded for request ID 4471
+2026-06-20 09:22:10 WARNING High memory usage detected: 88%
+2026-06-20 09:25:47 ERROR  Backup job failed: target unreachable
+2026-06-20 09:30:00 INFO  Scheduled health check passed

@@ -1,0 +1,23 @@
+# Direct dependencies only, pinned to the versions this was built and tested against.
+# Transitive packages are left to the resolver — pinning all 71 makes upgrades painful
+# without making the build meaningfully more reproducible at this stage.
+
+# ── Web layer ────────────────────────────────────────────────────────────────
+fastapi==0.138.1
+uvicorn==0.49.0
+pydantic==2.13.4
+
+# ── Agents ───────────────────────────────────────────────────────────────────
+langchain-core==1.4.8
+langchain-groq==1.1.3
+langgraph==1.2.6
+groq==0.37.1
+
+# ── Reaching machines ────────────────────────────────────────────────────────
+psutil==7.2.2          # local transport: reads the host directly
+paramiko==5.0.0        # ssh transport
+httpx==0.28.1          # the agent daemon polls with this
+
+# ── Security ─────────────────────────────────────────────────────────────────
+cryptography==50.0.0   # Fernet, for encrypting stored SSH credentials
+python-dotenv==1.2.2

@@ -1,0 +1,50 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Secrets — nothing here may ever be committed.
+# ─────────────────────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# ─────────────────────────────────────────────────────────────────────────────
+# The database. Holds real accounts, password hashes, encrypted SSH credentials
+# and agent key fingerprints — it is user data, not code.
+# ─────────────────────────────────────────────────────────────────────────────
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Runtime output — produced by agents actually running, not authored.
+# ─────────────────────────────────────────────────────────────────────────────
+backups/
+custom_tools_log.json
+*.log
+!sample.log
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Python environment
+# ─────────────────────────────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Editor / machine-local
+# ─────────────────────────────────────────────────────────────────────────────
+.claude/settings.local.json
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
