@@ -24,6 +24,12 @@ id_ed25519*
 # ─────────────────────────────────────────────────────────────────────────────
 backups/
 custom_tools_log.json
+# API response captures from timing/benchmark runs. They carry real readings from whichever
+# machine produced them, so they are output, not fixtures.
+run1.json
+full.json
+chain.json
+*.response.json
 *.log
 !sample.log
 
